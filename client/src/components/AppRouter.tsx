@@ -9,13 +9,13 @@ const AppRouter: FC = () => {
 
     return (
         <Routes>
-            {isAuth === true && authRoutes.map(({path, Component}) =>
+            {isAuth && authRoutes.map(({path, Component}) =>
                 <Route key={path} path={path} element={Component}/>
             )}
             {publicRoutes.map(({path, Component}) =>
                 <Route key={path} path={path} element={Component}/>
             )}
-            <Route path="*" element={(<NotFound />)} />
+            <Route path="*" element={(<NotFound/>)}/>
         </Routes>
     );
 };

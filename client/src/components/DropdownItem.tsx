@@ -1,7 +1,5 @@
 import React, {FC, useState} from 'react';
 import {DropdownItemStyled, DropdownInputStyled} from "../styles/components/DropdownStyled";
-import {Row} from "../styles/components/styled-comlonents";
-import Dropdown from "./Dropdown";
 
 interface IDropdownItemProps {
     label: string

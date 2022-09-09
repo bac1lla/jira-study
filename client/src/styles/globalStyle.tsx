@@ -10,4 +10,8 @@ export const GlobalStyle = createGlobalStyle`
     font-size: 14px;
     font-family: Open-Sans, Helvetica, Sans-Serif, sans-serif;
   }
+  //#root {
+  //  height: 100vh;
+  //  overflow: hidden;
+  //}
 `
