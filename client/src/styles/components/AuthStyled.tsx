@@ -6,7 +6,6 @@ export const AuthStyled = styled(Wrapper)`
   top: 50%;
   left: 50%;
   margin: -150px 0 0 -250px;
-
 `
 export const AuthContent = styled(Box)`
   padding: 15px 20px;

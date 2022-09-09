@@ -6,11 +6,13 @@ import NavBar from "./components/NavBar";
 
 function App() {
     return (
+        <div style={{height: '100vh'}}>
             <BrowserRouter>
                 <GlobalStyle/>
                 <NavBar/>
                 <AppRouter/>
             </BrowserRouter>
+        </div>
     );
 }
 

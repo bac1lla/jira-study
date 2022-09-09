@@ -1,4 +1,5 @@
 import styled, {css} from "styled-components";
+import {NAVBAR_HEIGHT} from "../consts";
 
 export const shadowStyle = css`
   box-shadow: 4px 2px 0 0 rgba(0, 0, 0, 1);
@@ -13,6 +14,12 @@ export const boxStyles = css`
 export const Wrapper = styled.div`
   max-width: 95%;
   margin: 0 auto;
+`
+export const Container = styled(Wrapper)`
+  height: calc(100% - ${NAVBAR_HEIGHT});
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `
 export const Button = styled.button`
   cursor: pointer;
