@@ -1,0 +1,6 @@
+export const LOGIN_ROUTE = '/login'
+export const REGISTRATION_ROUTE = '/registration'
+export const DESKTOP_ROUTE = '/'
+export const BOARD_ROUTE = '/board'
+export const MESSENGER_ROUTE = '/messenger'
+export const STATISTIC_ROUTE = '/statistic'
