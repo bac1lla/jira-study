@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {Box, Wrapper} from "./styled-comlonents";
+import {Box, Wrapper} from "./components";
 
 export const AuthStyled = styled(Wrapper)`
   position: absolute;

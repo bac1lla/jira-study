@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
-import {Button} from "../styles/components/styled-comlonents";
-import {DropdownStyled, DropdownContent} from "../styles/components/DropdownStyled";
+import {Button} from "../styles/components";
+import {DropdownStyled, DropdownContent} from "../styles/DropdownStyled";
 
 interface IDropdownSingleProps<T> {
     label: string

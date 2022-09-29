@@ -1,12 +1,12 @@
 import React, {FC} from 'react';
-import {NotFoundStyled} from "../styles/components/NotFoundStyled";
-import {Container, Row, Wrapper} from "../styles/components/styled-comlonents";
+import {NotFoundStyled} from "../styles/NotFoundStyled";
+import {Container} from "../styles/components";
 import {Link} from "react-router-dom";
 import {DESKTOP_ROUTE} from "../utils/consts";
 
 const NotFound: FC = () => {
     return (
-        <Container>
+        <Container display="flex">
             <NotFoundStyled>
                 <h1>Error <span className="errorcode">404</span></h1>
                 <p>The page you are looking for might have been removed, had its name changed or is

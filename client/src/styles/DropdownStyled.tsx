@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import {BUTTON_HEIGHT} from "../consts";
-import {boxStyles, shadowStyle} from "./styled-comlonents";
+import {BUTTON_HEIGHT} from "./consts";
+import {boxStyles, shadowStyle} from "./components";
 
 export const DropdownStyled = styled.div`
   position: relative;

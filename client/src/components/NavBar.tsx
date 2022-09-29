@@ -1,9 +1,10 @@
 import React, {FC} from 'react';
-import {Button, Wrapper} from "../styles/components/styled-comlonents";
-import {NavBarStyled} from "../styles/components/NavBarStyled";
+import {Button, StyledLink, Wrapper} from "../styles/components";
+import {NavBarStyled} from "../styles/NavBarStyled";
 import Dropdown from "./Dropdown";
 import {IGroup, ISubject} from "../types/types";
 import DropdownItem from "./DropdownItem";
+import {DESKTOP_ROUTE, LOGIN_ROUTE} from "../utils/consts";
 
 const subjects: IGroup[] = [
     {
@@ -36,7 +37,7 @@ const NavBar: FC = () => {
     return (
         <Wrapper>
             <NavBarStyled>
-                <Button>logo</Button>
+                <Button><StyledLink to={DESKTOP_ROUTE}>logo</StyledLink></Button>
                 <Dropdown
                     label={"Выбор предмета"}
                     items={subjects}
@@ -49,6 +50,7 @@ const NavBar: FC = () => {
                 <Button>Успеваемость</Button>
                 <Button>Сообщения</Button>
                 <Button>Поиск</Button>
+                <Button><StyledLink to={LOGIN_ROUTE}>Выйти</StyledLink></Button>
             </NavBarStyled>
         </Wrapper>
     );

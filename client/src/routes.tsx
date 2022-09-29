@@ -3,7 +3,7 @@ import {
     BOARD_ROUTE,
     DESKTOP_ROUTE,
     LOGIN_ROUTE,
-    MESSENGER_ROUTE,
+    MESSENGER_ROUTE, PERSONALISED_BOARD_ROUTE,
     REGISTRATION_ROUTE,
     STATISTIC_ROUTE
 } from "./utils/consts";
@@ -12,6 +12,7 @@ import Board from "./pages/Board";
 import Messenger from "./pages/Messenger";
 import Statistic from "./pages/Statistic";
 import Desktop from "./pages/Desktop";
+import PersonalBoard from "./pages/PersonalBoard";
 
 export const publicRoutes: IRoute[] = [
     {
@@ -32,6 +33,10 @@ export const authRoutes: IRoute[] = [
     {
         path: BOARD_ROUTE,
         Component: <Board />
+    },
+    {
+        path: PERSONALISED_BOARD_ROUTE + "/:id",
+        Component: <PersonalBoard />
     },
     {
         path: MESSENGER_ROUTE,

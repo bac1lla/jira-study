@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {Box} from "./styled-comlonents";
+import {Box} from "./components";
 
 export const NotFoundStyled = styled(Box)`
   padding: 15px 20px;

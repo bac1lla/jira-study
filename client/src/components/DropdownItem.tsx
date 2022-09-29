@@ -1,5 +1,5 @@
 import React, {FC, useState} from 'react';
-import {DropdownItemStyled, DropdownInputStyled} from "../styles/components/DropdownStyled";
+import {DropdownItemStyled, DropdownInputStyled} from "../styles/DropdownStyled";
 
 interface IDropdownItemProps {
     label: string
